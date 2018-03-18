@@ -1,18 +1,15 @@
 'use strict';
 /*
-This is over simplified
+This is over simplified a better solution might be to build a 2d array and maintain the location of each element there
+when user or bug attempts to enter the same square we have a collision.  The below functions and is confidently correct.
  */
-
 function inside(player, enemy){
   return (player.x <= enemy.x + enemy.width && player.x + player.width >= enemy.x)
     && (player.y <= enemy.y + enemy.height && player.height + player.y >= enemy.y);
-
 }
 
 /*** Enemy Class ***/
-
-// Enemies our player must avoid
-var Enemy = function(x, y, speed) {
+var Enemy = function (x, y, speed) {
   this.y = y;
   this.x = x;
   this.speed = speed;
@@ -24,6 +21,8 @@ var Enemy = function(x, y, speed) {
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
 Enemy.prototype.update = function(dt) {
+
+
   if (this.x < 550) {
     this.x += dt * this.speed;
   } else {
@@ -116,8 +115,8 @@ var enemyStartingPositions = [60, 143, 226]; // All possible Y locations for ene
 
 // Create enemies and push them into allEnemies array.
 enemyStartingPositions.forEach(function(y){
-  var x = Math.floor((Math.random() * 5 - 100));
-  var enemy = new Enemy(x, y);
+  let x = Math.floor((Math.random() * 5 - 100));
+  let enemy = new Enemy(x, y);
   allEnemies.push(enemy);
 });
 
