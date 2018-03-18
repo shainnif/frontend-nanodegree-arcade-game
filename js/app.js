@@ -4,11 +4,9 @@ This is over simplified
  */
 
 function inside(player, enemy){
-  if ((player.x <= enemy.x + enemy.width && player.x + player.width >= enemy.x)
-    && (player.y <= enemy.y + enemy.height && player.height + player.y >= enemy.y)) {
-      return true;
-  }
-  return false;
+  return (player.x <= enemy.x + enemy.width && player.x + player.width >= enemy.x)
+    && (player.y <= enemy.y + enemy.height && player.height + player.y >= enemy.y);
+
 }
 
 /*** Enemy Class ***/

@@ -1,6 +1,23 @@
-frontend-nanodegree-arcade-game
-===============================
+# Frogger Clone
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+A very simple clone of the 1980's classic game.
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+## Installation
+Clone the project to your machine
+
+``` 
+git clone https://github.com/shainnif/frontend-nanodegree-arcade-game.git
+```
+
+## How to Play
+
+Open the index.html inn your browser.  To win you need get your character safely to the top of the screen.  The game ends if your character collides with the moving bugs.
+
+You can only move in four directions:-
+
+* Up Arrow - Moves up the screen.
+* Down Arrow - Moves down the screen.
+* Left Arrow - Moves left on the screen.
+* Right Arrow - Moves right on the screen.
+
+Once you either win or lose the game resets, and you player is moved back to the bottom of the screen.
