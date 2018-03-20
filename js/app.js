@@ -79,7 +79,7 @@ Player.prototype.handleInput = function (keyCode) {
 
 Player.prototype.update = function () {
   if (this.y <= 10) {
-    this.reset(202, 380);
+    this.reset();
   }
   this.checkCollisions();
 };
@@ -91,7 +91,7 @@ Player.prototype.render = function () {
 
 // Player position reset.
 Player.prototype.reset = function () {
-  this.x = 202;
+  this.x = 200;
   this.y = 380;
 };
 
