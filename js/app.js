@@ -14,7 +14,7 @@ var Enemy = function (x, y, speed) {
   this.y = y;
   this.x = x;
   this.speed = speed;
-  this.height = 48; // Height and width set for collision detection.
+  this.height = 50; // Height and width set for collision detection.
   this.width = 55;
   this.sprite = 'images/enemy-bug.png';
 };
@@ -51,8 +51,8 @@ var Player = function () {
 
 Player.prototype.handleInput = function (keyCode) {
   // Switch statement to handle keyboard inputs and keep the player within game bounds.
-  var xShift = 101;
-  var yShift = 83;
+  var xShift = 100;
+  var yShift = 80;
   switch (keyCode) {
     case 'left' :
       if (this.x > 0) {
