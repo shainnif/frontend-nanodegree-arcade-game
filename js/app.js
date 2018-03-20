@@ -27,6 +27,7 @@ Enemy.prototype.update = function (dt) {
   } else {
     // Reset enemy position and generate a new speed.
     this.x = -150;
+    //reset the speed for every loop
     this.randomSpeed();
   }
 };
@@ -109,7 +110,7 @@ var player = new Player();
 
 var allEnemies = [];
 
-var enemyStartingPositions = [50, 140, 220]; // All possible Y locations for enemies.
+var enemyStartingPositions = [50, 140, 220]; // All possible start Y locations for enemies.
 
 // Create enemies and push them into allEnemies array.
 enemyStartingPositions.forEach(function (y) {
